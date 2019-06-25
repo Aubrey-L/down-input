@@ -1,0 +1,19 @@
+
+<view class='show-class' bindtap='_concealShow'  hidden='{{isShow}}' ></view>
+<view class='box'  style="{{isShow?'':'z-index:100;'}}">
+  <text class="textInt">{{leftName}}</text>
+  <view class='inpt'>
+    <input value="{{InputValue}}" bindblur="getInputValue" bindinput='getValues' class="inputText   {{isShow?'':'bottom-border'}}" placeholder='请输入相关内容' placeholder-class='place-holder-style' bindfocus='_bindfocus' />
+    <view class='box-boder' hidden='{{isShow}}'>
+      <view >
+        <scroll-view scroll-y='true' bindscrolltolower="lower"  style="height:340rpx;">
+          <block wx:for="{{searchList}}" wx:for-index="index" wx:for-item="array" wx:key="idx">
+            <view bindtap='_child' data-index='{{index}}' class='child-class'>
+              {{array}}
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>

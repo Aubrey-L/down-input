@@ -1,0 +1,71 @@
+.box {
+  margin:0 69rpx 10rpx 69rpx;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+.show-class{
+  position:fixed;
+z-index:80;
+top:0;
+right:0;
+left:0;
+bottom:0;
+
+}
+
+.textInt {
+  font-size: 22rpx;
+  color: #999;
+  padding: 35rpx 0 0 0 ;
+  margin-bottom: 20rpx;
+}
+
+.inputText {
+  position: relative;
+  font-size: 28rpx;
+  color: #333;
+  margin-left: 35rpx;
+  margin-right: 35rpx;
+  margin-top: 10rpx;
+  padding-bottom: 10rpx;
+  width: 90%;
+}
+
+.bottom-border {
+  border-bottom: 1rpx solid #e0e0e0;
+}
+
+.place-holder-style {
+  color: #ccc;
+}
+
+.box-boder {
+  display: flex;
+  flex-direction: column;
+  background:white;
+z-index:120;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  background: white;
+  border: 1rpx solid #e0e0e0;
+  border-top: none;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 333rpx;
+  overflow: hidden;
+}
+
+.inpt {
+  max-height: 410rpx;
+  border: 1rpx solid #e0e0e0;
+}
+
+.child-class {
+  font-size: 22rpx;
+  padding-left: 35rpx;
+  padding-top: 32rpx;
+}
